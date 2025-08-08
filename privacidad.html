@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidad | Fenix Gym Bormujos</title>
+  <meta name="description" content="Cómo tratamos tus datos en Fenix Gym Bormujos (RGPD/LOPDGDD)." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="images/LogoPNG.png" alt="Logo Fenix Gym" /><span>Fenix Gym Bormujos</span></a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="nav-list">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#precios">Precios</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a class="btn btn-primary" href="https://wa.me/34614266599" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Política de Privacidad</h1>
+
+      <h2>1. Responsable del tratamiento</h2>
+      <p><strong>Responsable:</strong> <em>[Rellena: Razón social / titular]</em> (<em>[NIF/CIF]</em>)<br>
+      <strong>Domicilio:</strong> C/ Manuel Esquivas, 31 · 41930 Bormujos (Sevilla)<br>
+      <strong>Teléfono:</strong> <a href="tel:+34614266599">+34 614 26 65 99</a><br>
+      <strong>Email:</strong> <em>[Rellena: email de privacidad]</em></p>
+
+      <h2>2. Datos que tratamos</h2>
+      <ul>
+        <li>Datos de contacto (nombre, email, teléfono) que nos facilitas en formularios o por mensajería.</li>
+        <li>Consultas o solicitudes relacionadas con nuestros servicios.</li>
+      </ul>
+
+      <h2>3. Finalidades</h2>
+      <ul>
+        <li>Atender tus consultas y gestionar solicitudes de información y altas.</li>
+        <li>Comunicarnos contigo sobre tu solicitud. (No enviamos marketing sin consentimiento).</li>
+      </ul>
+
+      <h2>4. Legitimación</h2>
+      <p>Tu consentimiento (art. 6.1.a RGPD) al remitir el formulario y nuestro interés legítimo en responder (art. 6.1.f RGPD).</p>
+
+      <h2>5. Destinatarios</h2>
+      <p>No cedemos datos a terceros salvo obligación legal. Podemos usar proveedores (alojamiento web, formularios) con contratos de encargo de tratamiento.</p>
+
+      <h2>6. Transferencias internacionales</h2>
+      <p>Si utilizamos herramientas con servidores fuera del EEE, garantizaremos las salvaguardas adecuadas conforme al RGPD.</p>
+
+      <h2>7. Conservación</h2>
+      <p>Conservamos tus datos mientras gestionamos tu solicitud y, en su caso, durante los plazos legales aplicables.</p>
+
+      <h2>8. Derechos</h2>
+      <p>Puedes solicitar acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <em>[email]</em> o a la dirección postal. Tienes derecho a reclamar ante la AEPD.</p>
+
+      <h2>9. Seguridad</h2>
+      <p>Aplicamos medidas técnicas y organizativas razonables para proteger los datos frente a accesos no autorizados.</p>
+
+      <h2>10. Menores</h2>
+      <p>No tratamos datos de menores sin autorización de sus representantes legales.</p>
+
+      <h2>11. Cambios</h2>
+      <p>Podemos actualizar esta política para adaptarla a cambios normativos o de servicio. La versión vigente es la publicada en esta página.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; <span id="year"></span> Fenix Gym Bormujos</p>
+        <p>C/ Manuel Esquivas, 31 · Bormujos (Sevilla)</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+34614266599">+34 614 26 65 99</a>
+        <a href="https://wa.me/34614266599" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/fenixgymbormujos/" target="_blank" rel="noopener">Instagram</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle')?.addEventListener('click', function(){
+      const list=document.querySelector('.nav-list');
+      const open=list.classList.toggle('open');
+      this.setAttribute('aria-expanded', String(open));
+    });
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>

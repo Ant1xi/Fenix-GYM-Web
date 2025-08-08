@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Cookies | Fenix Gym Bormujos</title>
+  <meta name="description" content="Política de cookies de Fenix Gym Bormujos." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="images/LogoPNG.png" alt="Logo Fenix Gym" /><span>Fenix Gym Bormujos</span></a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="nav-list">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#precios">Precios</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a class="btn btn-primary" href="https://wa.me/34614266599" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Política de Cookies</h1>
+
+      <p>En este sitio utilizamos cookies propias y de terceros para el funcionamiento básico de la web y mejorar la experiencia de usuario.</p>
+
+      <h2>¿Qué es una cookie?</h2>
+      <p>Un pequeño archivo que se descarga en tu dispositivo al acceder a ciertas páginas para permitir, por ejemplo, recordar preferencias o mostrar contenidos embebidos.</p>
+
+      <h2>Tipos de cookies que usamos</h2>
+      <ul>
+        <li><strong>Técnicas (propias):</strong> necesarias para que la web funcione correctamente.</li>
+        <li><strong>De terceros:</strong> servicios embebidos como <em>Google Maps</em> (solo al cargar el mapa) y enlaces a WhatsApp/Instagram (sus plataformas aplican sus propias cookies cuando las usas).</li>
+        <!-- Si añades analítica, descomenta y concreta:
+        <li><strong>Analítica:</strong> Google Analytics para estadísticas de uso (IP anonimizada, retención X meses, etc.).</li>
+        -->
+      </ul>
+
+      <h2>Gestión y rechazo de cookies</h2>
+      <p>Puedes permitir, bloquear o eliminar cookies desde la configuración de tu navegador. Ten en cuenta que bloquear algunas puede afectar al funcionamiento del sitio.</p>
+
+      <h2>Aceptación de cookies</h2>
+      <p>Si incorporamos cookies no esenciales (por ejemplo, analítica), mostraremos un banner para aceptarlas o rechazarlas antes de cargarlas.</p>
+
+      <h2>Actualizaciones</h2>
+      <p>Podemos actualizar esta política para reflejar cambios en el uso de cookies. Recomendamos revisarla periódicamente.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; <span id="year"></span> Fenix Gym Bormujos</p>
+        <p>C/ Manuel Esquivas, 31 · Bormujos (Sevilla)</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+34614266599">+34 614 26 65 99</a>
+        <a href="https://wa.me/34614266599" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/fenixgymbormujos/" target="_blank" rel="noopener">Instagram</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle')?.addEventListener('click', function(){
+      const list=document.querySelector('.nav-list');
+      const open=list.classList.toggle('open');
+      this.setAttribute('aria-expanded', String(open));
+    });
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>

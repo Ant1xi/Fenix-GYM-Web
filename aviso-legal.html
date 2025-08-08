@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aviso Legal | Fenix Gym Bormujos</title>
+  <meta name="description" content="Aviso legal y condiciones de uso de Fenix Gym Bormujos." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="images/LogoPNG.png" alt="Logo Fenix Gym" /><span>Fenix Gym Bormujos</span></a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+        <ul class="nav-list">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#precios">Precios</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+          <li><a class="btn btn-primary" href="https://wa.me/34614266599" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Aviso Legal</h1>
+
+      <h2>1. Titular del sitio web</h2>
+      <p><strong>Titular:</strong> <em>[Rellena: Razón social / titular]</em> (<em>[NIF/CIF]</em>)<br>
+      <strong>Domicilio:</strong> C/ Manuel Esquivas, 31 · 41930 Bormujos (Sevilla)<br>
+      <strong>Teléfono:</strong> <a href="tel:+34614266599">+34 614 26 65 99</a><br>
+      <strong>Email:</strong> <em>[Rellena: email de contacto]</em></p>
+
+      <h2>2. Objeto</h2>
+      <p>Este sitio web tiene como finalidad informar sobre los servicios de Fenix Gym Bormujos y facilitar el contacto con el centro.</p>
+
+      <h2>3. Condiciones de uso</h2>
+      <ul>
+        <li>El usuario se compromete a hacer un uso diligente, correcto y lícito de los contenidos.</li>
+        <li>Fenix Gym podrá modificar contenidos o interrumpir temporalmente el acceso por mantenimiento.</li>
+      </ul>
+
+      <h2>4. Propiedad intelectual e industrial</h2>
+      <p>Los textos, logotipos e imágenes son propiedad del titular o de terceros con licencia. Queda prohibida su reproducción sin autorización.</p>
+
+      <h2>5. Enlaces</h2>
+      <p>Los enlaces a sitios de terceros (p. ej., Google Maps, Instagram o WhatsApp) son ajenos al titular. No nos responsabilizamos de sus contenidos o políticas.</p>
+
+      <h2>6. Responsabilidad</h2>
+      <p>El titular no garantiza la disponibilidad permanente del sitio ni la ausencia de errores, si bien adoptará medidas para corregirlos cuando proceda.</p>
+
+      <h2>7. Protección de datos</h2>
+      <p>El tratamiento de datos personales se rige por la <a href="privacidad.html">Política de Privacidad</a>.</p>
+
+      <h2>8. Legislación y jurisdicción</h2>
+      <p>Este aviso se rige por la legislación española. Para cualquier controversia, las partes se someten a los Juzgados y Tribunales de <em>[Rellena: localidad]</em>, salvo norma imperativa.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; <span id="year"></span> Fenix Gym Bormujos</p>
+        <p>C/ Manuel Esquivas, 31 · Bormujos (Sevilla)</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+34614266599">+34 614 26 65 99</a>
+        <a href="https://wa.me/34614266599" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/fenixgymbormujos/" target="_blank" rel="noopener">Instagram</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle')?.addEventListener('click', function(){
+      const list=document.querySelector('.nav-list');
+      const open=list.classList.toggle('open');
+      this.setAttribute('aria-expanded', String(open));
+    });
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>

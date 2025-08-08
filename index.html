@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fenix Gym Bormujos | Entrena sin límites</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- SEO básico -->
+  <meta name="description" content="Fénix Gym Bormujos: tu gimnasio en Sevilla sin matrícula ni permanencia. Clases dirigidas, cardio, musculación y más.">
+  <meta name="keywords" content="gimnasio, Bormujos, Fenix Gym, fitness, sin matrícula, clases dirigidas, Sevilla">
+  <meta name="author" content="Antonio Castro Guerrero">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fenixgymbormujos.com/">
+
+  <!-- Accesibilidad y UX -->
+  <meta name="theme-color" content="#00bfff">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fenix Gym Bormujos" />
+  <meta property="og:description" content="Tu gimnasio de confianza en Bormujos. Entrena a tu ritmo sin compromisos." />
+  <meta property="og:image" content="https://fenixgymbormujos.com/images/banner.jpg" />
+  <meta property="og:url" content="https://fenixgymbormujos.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fenix Gym Bormujos" />
+  <meta name="twitter:description" content="Entrena sin matrícula. Conoce nuestras clases dirigidas, zona de cardio y musculación." />
+  <meta name="twitter:image" content="https://fenixgymbormujos.com/images/banner.jpg" />
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsActivityLocation",
+    "name": "Fenix Gym Bormujos",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Manuel Esquivas, 31",
+      "addressLocality": "Bormujos",
+      "addressRegion": "Sevilla",
+      "postalCode": "41930",
+      "addressCountry": "ES"
+    },
+    "url": "https://fenixgymbormujos.com",
+    "telephone": "+34 614 26 65 99",
+    "image": "https://fenixgymbormujos.com/images/LogoPNG.png",
+    "description": "Gimnasio local sin matrícula ni permanencia con clases, musculación, cardio y ambiente cercano.",
+    "openingHours": "Mo-Fr 07:30-22:30, Sa 09:30-13:30"
+  }
+  </script>
+
+  <!-- Estilos del banner de cookies (mínimos, integrados) -->
+  <style>
+    .cookie-banner{
+      position:fixed; inset:auto 0 0 0; z-index:9999;
+      background:#0e1232; color:#eaf6ff; border-top:1px solid rgba(255,255,255,.1);
+      box-shadow:0 -8px 24px rgba(0,0,0,.35);
+      padding:1rem 0;
+    }
+    .cookie-inner{width:min(1120px,92%);margin:auto;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;justify-content:space-between}
+    .cookie-text{flex:1;min-width:260px;font-size:.95rem}
+    .cookie-text a{color:#00bfff;text-decoration:underline}
+    .cookie-actions{display:flex;gap:.6rem;flex-wrap:wrap}
+    .cookie-btn{padding:.7rem 1rem;border-radius:10px;border:1px solid #00bfff;color:#00bfff;background:transparent;cursor:pointer}
+    .cookie-accept{background:linear-gradient(90deg,#00bfff,#5fe3ff);border:none;color:#02101a;font-weight:700}
+    .cookie-reject{border-color:#7aa6bd;color:#cfe1ff}
+    .cookie-config{border-color:#7aa6bd;color:#cfe1ff}
+    .cookie-modal{
+      position:fixed; inset:0; display:none; align-items:center; justify-content:center; z-index:10000;
+      background:rgba(0,0,0,.6); backdrop-filter:blur(2px);
+    }
+    .cookie-card{
+      background:#0b0f2a; color:#eaf6ff; border:1px solid rgba(255,255,255,.1);
+      border-radius:16px; width:min(640px,92%); padding:1rem;
+      box-shadow:0 10px 30px rgba(0,0,0,.5);
+    }
+    .cookie-row{display:flex;align-items:center;justify-content:space-between;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:.8rem;margin:.6rem 0}
+    .cookie-row small{color:#a9b4c7}
+    .switch{
+      position:relative; width:46px; height:26px; display:inline-block;
+    }
+    .switch input{opacity:0;width:0;height:0}
+    .slider{
+      position:absolute;cursor:pointer; inset:0; background:#243055; border-radius:999px; transition:.2s;
+    }
+    .slider:before{
+      content:""; position:absolute; height:20px; width:20px; left:3px; top:3px; background:white; border-radius:50%; transition:.2s;
+    }
+    input:checked + .slider{background:#00bfff}
+    input:checked + .slider:before{transform:translateX(20px)}
+    .cookie-modal-actions{display:flex;gap:.6rem;justify-content:flex-end;margin-top:1rem}
+    .cookie-hidden{display:none !important}
+    @media (max-width:720px){
+      .cookie-inner{flex-direction:column;align-items:flex-start}
+      .cookie-actions{align-self:flex-end}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header + Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <img src="images/LogoPNG.png" alt="Logo Fenix Gym" />
+        <span>Fenix Gym Bormujos</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#precios">Precios y Bonos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a class="btn btn-primary" href="https://wa.me/34614266599" target="_blank" rel="noopener">Pruébalo hoy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero banner -->
+  <section class="hero" id="inicio">
+    <img class="hero-bg" src="images/bannerGYM.png" alt="Sala del Fenix Gym Bormujos" />
+    <div class="container hero-content" data-aos="fade-up">
+      <h1>Entrena sin límites<span class="accent">.</span></h1>
+      <p>Sin matrícula ni permanencia. Clases dirigidas, cardio y musculación.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#precios">Ver precios</a>
+        <a class="btn btn-outline" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logo + Mapa -->
+  <section id="imagenLogo" class="logo-map">
+    <div class="container logo-map-grid" data-aos="fade-up">
+      <div class="map-embed">
+        <a href="https://www.google.com/maps?q=Fenix+Gym+Bormujos" target="_blank" rel="noopener" aria-label="Abrir mapa en Google">
+          <iframe
+            title="Mapa Fenix Gym Bormujos"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.688742435066!2d-6.072073624135204!3d37.37354117208913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd121334e690b9fd%3A0x6977ca5950ce566a!2sC.%20Manuel%20Esquivias%2C%2031%2C%2041930%20Bormujos%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1751987626951!5m2!1ses!2ses"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </a>
+      </div>
+
+      <div class="welcome">
+        <img src="images/LogoPNG.png" alt="Logo Fenix Gym" class="logo-img">
+        <div class="welcome-text">
+          <h2>¡Bienvenido a Fénix Gym Bormujos!</h2>
+          <p>
+            Centro de entrenamiento con ambiente cercano y profesional.
+            <br>Clases dirigidas, sala de musculación y zona de cardio.
+            <br><strong>Sin matrícula ni permanencia.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Nuestros Servicios</h2>
+      <div class="grid" data-aos="fade-up" data-aos-delay="50">
+        <article class="card" data-bg="instalaciones">
+          <h3>Centro integral</h3>
+          <p>Instalaciones modernas para todos los niveles. Atención cercana.</p>
+        </article>
+        <article class="card" data-bg="musculacion">
+          <h3>Musculación</h3>
+          <p>Mancuernas, poleas, barras y máquinas para un entreno completo.</p>
+        </article>
+        <article class="card" data-bg="cardio">
+          <h3>Cardio</h3>
+          <p>Bicis, cintas, elípticas y remo para mejorar tu resistencia.</p>
+        </article>
+        <article class="card" data-bg="clases">
+          <h3>Clases dirigidas</h3>
+          <p>Spinning, HIIT, body pump, pilates y más, toda la semana.</p>
+        </article>
+        <article class="card" data-bg="accesibilidad">
+          <h3>Accesibilidad</h3>
+          <p>Acceso adaptado y facilidades de aparcamiento.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Precios -->
+  <section id="precios" class="section alt">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Precios y Bonos</h2>
+      <div class="grid" data-aos="fade-up" data-aos-delay="50">
+        <article class="card price">
+          <h3>Mensualidad</h3>
+          <p>Acceso total al gimnasio y clases.</p>
+          <p class="price-num">30 € / mes</p>
+          <a class="btn btn-primary" href="https://wa.me/34614266599" target="_blank" rel="noopener">Quiero apuntarme</a>
+        </article>
+        <article class="card price">
+          <h3>Tarjeta Bono</h3>
+          <p>9 accesos válidos 3 meses. Ideal para visitas puntuales.</p>
+          <p class="price-num">25 €</p>
+          <a class="btn" href="https://wa.me/34614266599" target="_blank" rel="noopener">Pedir info</a>
+        </article>
+        <article class="card price">
+          <h3>Clase suelta</h3>
+          <p>Ven a una clase sin bono ni mensualidad.</p>
+          <p class="price-num">4 €</p>
+          <a class="btn" href="https://wa.me/34614266599" target="_blank" rel="noopener">Reservar</a>
+        </article>
+        <article class="card price">
+          <h3>Ofertas</h3>
+          <p>Consulta en Instagram o en recepción. Descuentos estudiantes/familias.</p>
+          <a class="btn" href="https://www.instagram.com/fenixgymbormujos/" target="_blank" rel="noopener">Ver ofertas</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Contacto</h2>
+      <p class="section-sub" data-aos="fade-up">¿Dudas? Escríbenos o ven a vernos.</p>
+
+      <form id="contactForm" action="https://formspree.io/f/xvgrbndb" method="POST" class="contact-form" data-aos="fade-up" novalidate>
+        <label>Nombre
+          <input type="text" name="name" placeholder="Tu nombre" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        </label>
+        <label>Mensaje
+          <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+        </label>
+        <label class="consent">
+          <input type="checkbox" required>
+          Acepto la <a href="privacidad.html" target="_blank" rel="noopener">política de privacidad</a>.
+        </label>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <p id="formMessage" class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <button id="scrollToTop" title="Volver arriba" aria-label="Volver arriba">↑</button>
+    <button id="themeToggle" title="Cambiar tema" aria-label="Cambiar tema">🎨</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; <span id="year"></span> Fenix Gym Bormujos</p>
+        <p>C/ Manuel Esquivas, 31 · Bormujos (Sevilla)</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+34614266599">+34 614 26 65 99</a>
+        <a href="https://wa.me/34614266599" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/fenixgymbormujos/" target="_blank" rel="noopener">Instagram</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/34614266599" class="whatsapp-float" target="_blank" title="Chatea por WhatsApp" aria-label="WhatsApp Fenix Gym">
+    <img src="images/WhatsApp.svg.webp" alt="WhatsApp" class="whatsapp-icon">
+    <span>Escríbenos</span>
+  </a>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+
+  <!-- JS general -->
+  <script>
+    // Año
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){
+          e.preventDefault();
+          const el=document.querySelector(id);
+          if(el) el.scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+
+    // Menú móvil
+    const toggle=document.querySelector('.nav-toggle');
+    const list=document.querySelector('.nav-list');
+    toggle.addEventListener('click',()=>{
+      const open=list.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    // Arriba
+    const scrollBtn=document.getElementById('scrollToTop');
+    window.addEventListener('scroll',()=>{scrollBtn.style.display=window.scrollY>300?'block':'none';});
+    scrollBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+    // Tema
+    const themeToggle=document.getElementById('themeToggle');
+    window.addEventListener('DOMContentLoaded',()=>{
+      const saved=localStorage.getItem('theme');
+      if(saved==='light') document.body.classList.add('light');
+    });
+    themeToggle.addEventListener('click',()=>{
+      document.body.classList.toggle('light');
+      localStorage.setItem('theme', document.body.classList.contains('light')?'light':'dark');
+    });
+
+    // Form UX (front simple; Formspree valida servidor)
+    const form=document.getElementById('contactForm');
+    const msg=document.getElementById('formMessage');
+    form.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      msg.textContent='Enviando...';
+      const data=new FormData(form);
+      try{
+        const res=await fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}});
+        if(res.ok){ msg.textContent='✅ ¡Mensaje enviado!'; form.reset(); }
+        else { msg.textContent='❌ Error al enviar. Inténtalo más tarde.'; }
+      }catch(err){ msg.textContent='⚠️ Error de red.'; }
+    });
+  </script>
+
+  <!-- ===== Banner de Cookies ===== -->
+  <div id="cookieBanner" class="cookie-banner cookie-hidden" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        Usamos cookies propias (técnicas) y opcionalmente de analítica para mejorar tu experiencia. 
+        Consulta la <a href="cookies.html" target="_blank" rel="noopener">Política de Cookies</a> y la 
+        <a href="privacidad.html" target="_blank" rel="noopener">Privacidad</a>.
+      </div>
+      <div class="cookie-actions">
+        <button id="cookieConfigBtn" class="cookie-btn cookie-config" type="button">Configurar</button>
+        <button id="cookieRejectBtn" class="cookie-btn cookie-reject" type="button">Rechazar</button>
+        <button id="cookieAcceptBtn" class="cookie-btn cookie-accept" type="button">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de preferencias -->
+  <div id="cookieModal" class="cookie-modal" aria-hidden="true" aria-label="Preferencias de cookies">
+    <div class="cookie-card" role="document">
+      <h3 style="margin:.2rem 0 0.6rem">Preferencias de cookies</h3>
+      <div class="cookie-row">
+        <div>
+          <strong>Necesarias</strong><br>
+          <small>Imprescindibles para que la web funcione. Siempre activas.</small>
+        </div>
+        <label class="switch" aria-label="Cookies necesarias">
+          <input type="checkbox" checked disabled>
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="cookie-row">
+        <div>
+          <strong>Analítica</strong><br>
+          <small>Anónimas para estadísticas de uso (Google Analytics).</small>
+        </div>
+        <label class="switch" aria-label="Cookies de analítica">
+          <input id="analyticsToggle" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="cookie-modal-actions">
+        <button id="cookieSavePrefs" class="cookie-btn cookie-accept" type="button">Guardar</button>
+        <button id="cookieCancelPrefs" class="cookie-btn cookie-reject" type="button">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      const KEY='cookieConsentV1';
+      const banner=document.getElementById('cookieBanner');
+      const modal=document.getElementById('cookieModal');
+      const analyticsToggle=document.getElementById('analyticsToggle');
+      const acceptBtn=document.getElementById('cookieAcceptBtn');
+      const rejectBtn=document.getElementById('cookieRejectBtn');
+      const configBtn=document.getElementById('cookieConfigBtn');
+      const savePrefs=document.getElementById('cookieSavePrefs');
+      const cancelPrefs=document.getElementById('cookieCancelPrefs');
+
+      function getConsent(){
+        try { return JSON.parse(localStorage.getItem(KEY)) || null; }
+        catch(e){ return null; }
+      }
+      function setConsent(consent){
+        localStorage.setItem(KEY, JSON.stringify({ ...consent, ts: Date.now() }));
+      }
+      function showBanner(){ banner.classList.remove('cookie-hidden'); }
+      function hideBanner(){ banner.classList.add('cookie-hidden'); }
+      function openModal(){ modal.style.display='flex'; modal.setAttribute('aria-hidden','false'); }
+      function closeModal(){ modal.style.display='none'; modal.setAttribute('aria-hidden','true'); }
+
+      // Carga condicional de GA4 cuando analytics=true
+      function loadAnalytics(){
+        if(document.getElementById('ga-consented')) return; // no duplicar
+        const GA_ID='G-XXXXXXXXXX'; // <- Sustituye por tu ID real si lo usas
+        if(!GA_ID || GA_ID==='G-XXXXXXXXXX') return;
+        const s1=document.createElement('script');
+        s1.id='ga-consented';
+        s1.src=`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+        s1.async=true;
+        document.head.appendChild(s1);
+        const s2=document.createElement('script');
+        s2.text = `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}', { 'anonymize_ip': true });
+        `;
+        document.head.appendChild(s2);
+      }
+
+      // Init
+      const stored=getConsent();
+      if(!stored){
+        showBanner();
+      }else{
+        // Respeta preferencia guardada
+        if(stored.analytics===true){ loadAnalytics(); }
+      }
+
+      // Acciones rápidas
+      acceptBtn.addEventListener('click', ()=>{
+        setConsent({ necessary:true, analytics:true });
+        hideBanner(); closeModal(); loadAnalytics();
+      });
+      rejectBtn.addEventListener('click', ()=>{
+        setConsent({ necessary:true, analytics:false });
+        hideBanner(); closeModal();
+      });
+      configBtn.addEventListener('click', ()=>{
+        analyticsToggle.checked = stored?.analytics === true;
+        openModal();
+      });
+
+      // Guardar preferencias
+      savePrefs.addEventListener('click', ()=>{
+        setConsent({ necessary:true, analytics: analyticsToggle.checked });
+        hideBanner(); closeModal();
+        if(analyticsToggle.checked) loadAnalytics();
+      });
+      cancelPrefs.addEventListener('click', ()=> closeModal());
+
+      // Cerrar modal con ESC / click fondo
+      document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal(); });
+      modal.addEventListener('click', (e)=>{ if(e.target===modal) closeModal(); });
+    })();
+  </script>
+</body>
+</html>
