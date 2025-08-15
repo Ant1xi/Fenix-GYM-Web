@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clases | Fenix Gym Bormujos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Descubre las clases de Fenix Gym Bormujos: zumba, HIIT, body pump, pilates y spinning. Prueba la que más va contigo." />
+  <meta name="robots" content="index, follow">
+
+  <!-- Fuentes + estilos (los mismos del index) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Estilos extra para los controles personalizados -->
+  <style>
+    .media { position:relative; }
+    .play-toggle,
+    .mute-toggle{
+      position:absolute;
+      z-index:2;
+      border:none; border-radius:50%;
+      padding:10px 12px; cursor:pointer;
+      background:#ffffffe6; color:#001018; font-weight:800;
+      box-shadow:var(--shadow-neon);
+    }
+    .play-toggle{ right:12px; bottom:28px; }
+    .mute-toggle{ right:56px; bottom:28px; }
+    .play-toggle:hover, .mute-toggle:hover{ transform:translateY(-2px) }
+
+    /* Barra de progreso */
+    .progress{
+      position:absolute; left:0; right:0; bottom:0;
+      height:4px; background:rgba(255,255,255,.28);
+      cursor:pointer; z-index:2; overflow:hidden;
+    }
+    .progress__bar{
+      height:100%; width:0%;
+      background:linear-gradient(90deg,var(--accent),#5fe3ff);
+      box-shadow:var(--shadow-neon);
+      transition:width .1s linear;
+    }
+    .progress:hover{ height:6px; }
+
+    /* Tiempo actual / duración (opcional, pequeño) */
+    .timecode{
+      position:absolute; left:10px; bottom:34px; z-index:2;
+      font-size:.8rem; color:#eaf6ff; background:#00000055;
+      padding:2px 6px; border-radius:8px; border:1px solid rgba(255,255,255,.15);
+      backdrop-filter: blur(4px);
+    }
+
+    /* En móviles deja más espacio para controles nativos */
+    @media (hover:none){
+      .play-toggle, .mute-toggle{ bottom:40px; }
+      .progress{ height:5px; }
+    }
+  </style>
+
+  <!-- Open Graph básico -->
+  <meta property="og:title" content="Clases | Fenix Gym Bormujos" />
+  <meta property="og:description" content="Zumba, HIIT, body pump, pilates y spinning en un ambiente top." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <!-- Header compacto -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="Inicio">
+        <img src="images/LogoPNG.png" alt="Logo Fenix Gym" />
+        <span>Fenix Gym Bormujos</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#precios">Precios</a></li>
+          <li><a class="btn btn-primary" href="https://wa.me/34614266599" target="_blank" rel="noopener">Apúntate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero classes-hero">
+    <img class="hero-bg" src="images/bannerGYM.png" alt="Clases en Fenix Gym" />
+    <div class="container hero-content">
+      <h1>Nuestras clases<span class="accent">.</span></h1>
+      <p>Descubre las disciplinas y prueba la que más va contigo.</p>
+    </div>
+  </section>
+
+  <main class="section">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html#servicios">← Volver a servicios</a>
+      </nav>
+
+      <!-- Rejilla de clases -->
+      <div class="class-grid">
+        <!-- Zumba -->
+        <article class="class-card">
+          <div class="media">
+            <video src="media/zumba.mp4" playsinline loop preload="metadata"></video>
+            <button class="mute-toggle" aria-label="Silenciar">🔇</button>
+            <button class="play-toggle" aria-label="Reproducir">▶</button>
+            <div class="progress" aria-label="Progreso"><div class="progress__bar"></div></div>
+            <div class="timecode" aria-hidden="true">0:00 / 0:00</div>
+          </div>
+          <div class="cc-body">
+            <h3>Zumba</h3>
+            <p>Cardio con ritmo y coreografías fáciles. Quema calorías sin darte cuenta.</p>
+            <ul class="cc-meta">
+              <li>Intensidad: Media</li>
+              <li>Duración: 45 min</li>
+              <li>Calorías: 400–600</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- HIIT -->
+        <article class="class-card">
+          <div class="media">
+            <video src="media/hiit.mp4" playsinline loop preload="metadata"></video>
+            <button class="mute-toggle" aria-label="Silenciar">🔇</button>
+            <button class="play-toggle" aria-label="Reproducir">▶</button>
+            <div class="progress" aria-label="Progreso"><div class="progress__bar"></div></div>
+            <div class="timecode" aria-hidden="true">0:00 / 0:00</div>
+          </div>
+          <div class="cc-body">
+            <h3>HIIT</h3>
+            <p>Intervalos de alta intensidad para mejorar resistencia y fuerza.</p>
+            <ul class="cc-meta">
+              <li>Intensidad: Alta</li>
+              <li>Duración: 30 min</li>
+              <li>Calorías: 450–700</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Body Pump -->
+        <article class="class-card">
+          <div class="media">
+            <video src="media/bodypump.mp4" playsinline loop preload="metadata"></video>
+            <button class="mute-toggle" aria-label="Silenciar">🔇</button>
+            <button class="play-toggle" aria-label="Reproducir">▶</button>
+            <div class="progress" aria-label="Progreso"><div class="progress__bar"></div></div>
+            <div class="timecode" aria-hidden="true">0:00 / 0:00</div>
+          </div>
+          <div class="cc-body">
+            <h3>Body Pump</h3>
+            <p>Trabajo con barras y discos al ritmo de la música.</p>
+            <ul class="cc-meta">
+              <li>Intensidad: Media/Alta</li>
+              <li>Duración: 45–55 min</li>
+              <li>Fuerza y resistencia</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Pilates -->
+        <article class="class-card">
+          <div class="media">
+            <video src="media/pilates.mp4" playsinline loop preload="metadata"></video>
+            <button class="mute-toggle" aria-label="Silenciar">🔇</button>
+            <button class="play-toggle" aria-label="Reproducir">▶</button>
+            <div class="progress" aria-label="Progreso"><div class="progress__bar"></div></div>
+            <div class="timecode" aria-hidden="true">0:00 / 0:00</div>
+          </div>
+          <div class="cc-body">
+            <h3>Pilates</h3>
+            <p>Mejora la postura, el core y la flexibilidad.</p>
+            <ul class="cc-meta">
+              <li>Intensidad: Suave</li>
+              <li>Duración: 50 min</li>
+              <li>Movilidad y control</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Spinning -->
+        <article class="class-card">
+          <div class="media">
+            <video src="media/spinning.mp4" playsinline loop preload="metadata"></video>
+            <button class="mute-toggle" aria-label="Silenciar">🔇</button>
+            <button class="play-toggle" aria-label="Reproducir">▶</button>
+            <div class="progress" aria-label="Progreso"><div class="progress__bar"></div></div>
+            <div class="timecode" aria-hidden="true">0:00 / 0:00</div>
+          </div>
+          <div class="cc-body">
+            <h3>Spinning</h3>
+            <p>Ciclismo indoor con distintos ritmos y pendientes.</p>
+            <ul class="cc-meta">
+              <li>Intensidad: Media/Alta</li>
+              <li>Duración: 45 min</li>
+              <li>Cardio y piernas</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="center mt-20">
+        <a class="btn btn-outline" href="https://wa.me/34614266599" target="_blank" rel="noopener">Quiero probar una clase</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; <span id="year"></span> Fenix Gym Bormujos</p>
+        <p>C/ Manuel Esquivas, 31 · Bormujos (Sevilla)</p>
+      </div>
+      <div class="footer-links">
+        <a href="tel:+34614266599">+34 614 26 65 99</a>
+        <a href="https://wa.me/34614266599" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/fenixgymbormujos/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: año + controles de vídeo premium -->
+  <script>
+    // Año
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      const isTouch = matchMedia('(hover: none)').matches;
+
+      const formatTime = s => {
+        if (!isFinite(s)) return '0:00';
+        const m = Math.floor(s / 60);
+        const sec = Math.floor(s % 60).toString().padStart(2, '0');
+        return `${m}:${sec}`;
+      };
+
+      document.querySelectorAll('.class-card').forEach(card => {
+        const video = card.querySelector('video');
+        const btnPlay = card.querySelector('.play-toggle');
+        const btnMute = card.querySelector('.mute-toggle');
+        const progress = card.querySelector('.progress');
+        const bar = card.querySelector('.progress__bar');
+        const timecode = card.querySelector('.timecode');
+
+        // Estado inicial
+        if (isTouch) {
+          video.muted = false;      // El usuario escuchará sonido al darle play
+          video.controls = true;    // Controles nativos cómodos en móvil
+          btnMute.textContent = '🔊';
+          btnMute.setAttribute('aria-label', 'Silenciar');
+        } else {
+          video.muted = true;       // Preview silencioso en desktop
+          video.controls = false;   // Usamos controles custom
+          btnMute.textContent = '🔇';
+          btnMute.setAttribute('aria-label', 'Activar sonido');
+        }
+
+        // Actualiza timecode al cargar metadatos
+        const updateTimecode = () => {
+          timecode.textContent = `${formatTime(video.currentTime)} / ${formatTime(video.duration)}`;
+        };
+
+        // Pausar todos los demás vídeos
+        const pauseOthers = () => {
+          document.querySelectorAll('.class-card video').forEach(v => {
+            if (v !== video) v.pause();
+          });
+          document.querySelectorAll('.class-card .play-toggle').forEach(b => {
+            if (b !== btnPlay) { b.textContent = '▶'; b.setAttribute('aria-label','Reproducir'); }
+          });
+        };
+
+        // Reproducir con sonido en desktop al pulsar ▶
+        const playWithSoundIfDesktop = () => {
+          if (!isTouch) {
+            video.muted = false;
+            video.controls = false; // mantenemos solo controles custom en desktop
+            btnMute.textContent = '🔊';
+            btnMute.setAttribute('aria-label', 'Silenciar');
+            try { video.volume = 1; } catch(e){}
+          }
+        };
+
+        const playAction = () => {
+          pauseOthers();
+          playWithSoundIfDesktop();
+          video.play().then(() => {
+            btnPlay.textContent = '❚❚';
+            btnPlay.setAttribute('aria-label','Pausar');
+          }).catch(() => {
+            // Si el navegador requiere interacción adicional, deja controles nativos en móvil (ya están) o ignora.
+          });
+        };
+
+        const togglePlay = () => {
+          if (video.paused) playAction();
+          else {
+            video.pause();
+            btnPlay.textContent = '▶';
+            btnPlay.setAttribute('aria-label','Reproducir');
+          }
+        };
+
+        // Hover preview en desktop (silencioso)
+        if (!isTouch) {
+          card.addEventListener('mouseenter', () => {
+            if (video.muted) {
+              video.play().then(()=> {
+                btnPlay.textContent = '❚❚';
+                btnPlay.setAttribute('aria-label','Pausar');
+              }).catch(()=>{});
+            }
+          });
+          card.addEventListener('mouseleave', () => {
+            if (video.muted) {
+              video.pause();
+              btnPlay.textContent = '▶';
+              btnPlay.setAttribute('aria-label','Reproducir');
+            }
+          });
+        }
+
+        // Clicks de botones
+        btnPlay.addEventListener('click', togglePlay);
+
+        btnMute.addEventListener('click', () => {
+          video.muted = !video.muted;
+          if (!isTouch && video.muted) {
+            // Si vuelve a silenciar en desktop, mantenemos sin controles nativos
+            video.controls = false;
+          }
+          btnMute.textContent = video.muted ? '🔇' : '🔊';
+          btnMute.setAttribute('aria-label', video.muted ? 'Activar sonido' : 'Silenciar');
+          if (!video.paused && !video.muted) {
+            try { video.volume = 1; } catch(e){}
+          }
+        });
+
+        // Progreso
+        const updateProgress = () => {
+          const pct = (video.currentTime / (video.duration || 1)) * 100;
+          bar.style.width = pct + '%';
+          updateTimecode();
+        };
+        video.addEventListener('timeupdate', updateProgress);
+        video.addEventListener('loadedmetadata', updateTimecode);
+        video.addEventListener('durationchange', updateTimecode);
+
+        // Seek con click/touch
+        const seekFromEvent = (clientX) => {
+          const rect = progress.getBoundingClientRect();
+          const ratio = Math.min(Math.max((clientX - rect.left) / rect.width, 0), 1);
+          video.currentTime = ratio * (video.duration || 0);
+        };
+        progress.addEventListener('click', (e) => seekFromEvent(e.clientX));
+        progress.addEventListener('touchstart', (e) => {
+          if (e.touches && e.touches[0]) seekFromEvent(e.touches[0].clientX);
+        });
+
+        // Al terminar, vuelve el icono
+        video.addEventListener('ended', () => {
+          btnPlay.textContent = '▶';
+          btnPlay.setAttribute('aria-label','Reproducir');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
